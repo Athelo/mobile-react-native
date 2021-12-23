@@ -8,6 +8,56 @@ const item= {
   status: 1,
   projectId: 1
 }
+// -----------------------------Apple Health Kit -----------------------------------------------------
+// import AppleHealthKit, {
+//   HealthValue,
+//   HealthKitPermissions,
+// } from 'react-native-health'
+//
+// /* Permission options */
+// const permissions = {
+//   permissions: {
+//     read: [
+//       AppleHealthKit.Constants.Permissions.HeartRate,
+//       AppleHealthKit.Constants.Permissions.StepCount,
+//       AppleHealthKit.Constants.Permissions.Steps,
+//       AppleHealthKit.Constants.Permissions.VitaminK,
+//       AppleHealthKit.Constants.Permissions.Vo2Max,
+//       AppleHealthKit.Constants.Permissions.Workout,
+//     ],
+//     write: [],
+//   },
+// }
+// } as HealthKitPermissions
+
+// console.log('AppleHealthKit', AppleHealthKit);
+// console.log('\n\n\n\n');
+// console.log('AppleHealthKit Permissions', AppleHealthKit.Constants.Permissions);
+
+// console.log('AppleHealthKit', AppleHealthKit);
+
+// AppleHealthKit.initHealthKit(permissions, (error: string) => {
+  /* Called after we receive a response from the system */
+
+  // if (error) {
+  //   console.log('[ERROR] Cannot grant permissions!')
+  // }
+  //
+  // /* Can now read or write to HealthKit */
+  //
+  // const options = {
+  //   startDate: new Date(2020, 1, 1).toISOString(),
+  // }
+  //
+  // AppleHealthKit.getHeartRateSamples(
+  //   options,
+  //   (callbackError: string, results: HealthValue[]) => {
+  //     /* Samples are now collected from HealthKit */
+  //   },
+  // )
+// })
+// ----------------------------- End Apple Health Kit -----------------------------------------------------
+
 
 const backgroundImage = {uri: 'https://media.istockphoto.com/photos/closeup-nature-view-of-green-leaf-background-picture-id1208290498?k=20&m=1208290498&s=612x612&w=0&h=iOgX0Ycplsasv_aHAY4wWVfncP5AZK0Zs-Lr5mQxdTQ='};
 const backgroundImage2 = {uri: 'http://images.unsplash.com/photo-1550147760-44c9966d6bc7?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max'};
@@ -26,6 +76,7 @@ export default function App() {
           </View>
           <View style={styles.entries}>
             <Text style={styles.welcome}>Good morning, Heather!</Text>
+            <Text style={styles.welcome}>Good morning, Marq!</Text>
             <Text style={styles.suggestion}>It looks like you had a night of good sleep last night</Text>
           </View>
           <View style={styles.recommendation_tiles}>
@@ -64,7 +115,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     width: '80%',
   },
-  logo_image:{
+  logo_image: {
     width: 50,
     height: 50
   },
@@ -86,7 +137,7 @@ const styles = StyleSheet.create({
     display: 'flex',
     flexDirection: 'row',
     height: 100,
-    // justifyContent: 'center',
+    justifyContent: 'center',
   },
   suggestion:{
     color:'#fff',

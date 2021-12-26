@@ -108,3 +108,6 @@ dist
 
 # DS_STORE
 .DS_STORE
+
+# idea files
+.idea/

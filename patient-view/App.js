@@ -66,23 +66,136 @@ export default function App() {
   return (
       <View style={styles.container}>
         <ImageBackground source={backgroundImage} resizeMode="cover" style={styles.image}>
-          <View >
+          <View style={styles.header_menu}>
             <Image source={LOGO_IMAGE} style={styles.logo_image}/>
           </View>
-          <View style={styles.entries}>
-            <Text style={styles.welcome}>Good morning, Monica!</Text>
-            <Text style={styles.suggestion}>It looks like you had a night of good sleep last night</Text>
+          <ScrollView style={styles.content}>
+            <View style={styles.entries}>
+              <Text style={styles.welcome}>Good morning, Monica!</Text>
+              <Text style={styles.suggestion}>It looks like you had a night of good sleep last night</Text>
+            </View>
+            <View style={styles.recommendation_tiles}>
+              <Image
+                source={{
+                  uri: 'https://thumbs.dreamstime.com/b/athletic-young-woman-running-white-side-view-athletic-young-woman-running-white-background-side-view-165559529.jpg'
+                }}
+                style={styles.recommendation_icon}
+              />
+              <Text style={styles.recommendation_text}>We recommend two miles of brisk exercise for you today</Text>
+            </View>
+            <View style={styles.recommendation_tiles}>
+              <Image
+                source={{
+                  uri: 'https://thumbs.dreamstime.com/b/athletic-young-woman-running-white-side-view-athletic-young-woman-running-white-background-side-view-165559529.jpg'
+                }}
+                style={styles.recommendation_icon}
+              />
+              <Text style={styles.recommendation_text}>We recommend two miles of brisk exercise for you today</Text>
+            </View>
+            <View style={styles.recommendation_tiles}>
+              <Image
+                source={{
+                  uri: 'https://thumbs.dreamstime.com/b/athletic-young-woman-running-white-side-view-athletic-young-woman-running-white-background-side-view-165559529.jpg'
+                }}
+                style={styles.recommendation_icon}
+              />
+              <Text style={styles.recommendation_text}>We recommend two miles of brisk exercise for you today</Text>
+            </View>
+            <View style={styles.recommendation_tiles}>
+              <Image
+                source={{
+                  uri: 'https://thumbs.dreamstime.com/b/athletic-young-woman-running-white-side-view-athletic-young-woman-running-white-background-side-view-165559529.jpg'
+                }}
+                style={styles.recommendation_icon}
+              />
+              <Text style={styles.recommendation_text}>We recommend two miles of brisk exercise for you today</Text>
+            </View>
+            <View style={styles.recommendation_tiles}>
+              <Image
+                source={{
+                  uri: 'https://thumbs.dreamstime.com/b/athletic-young-woman-running-white-side-view-athletic-young-woman-running-white-background-side-view-165559529.jpg'
+                }}
+                style={styles.recommendation_icon}
+              />
+              <Text style={styles.recommendation_text}>We recommend two miles of brisk exercise for you today</Text>
+            </View>
+            <View style={styles.recommendation_tiles}>
+              <Image
+                source={{
+                  uri: 'https://thumbs.dreamstime.com/b/athletic-young-woman-running-white-side-view-athletic-young-woman-running-white-background-side-view-165559529.jpg'
+                }}
+                style={styles.recommendation_icon}
+              />
+              <Text style={styles.recommendation_text}>We recommend two miles of brisk exercise for you today</Text>
+            </View>
+            <View style={styles.recommendation_tiles}>
+              <Image
+                source={{
+                  uri: 'https://thumbs.dreamstime.com/b/athletic-young-woman-running-white-side-view-athletic-young-woman-running-white-background-side-view-165559529.jpg'
+                }}
+                style={styles.recommendation_icon}
+              />
+              <Text style={styles.recommendation_text}>We recommend two miles of brisk exercise for you today</Text>
+            </View>
+            <View style={styles.recommendation_tiles}>
+              <Image
+                source={{
+                  uri: 'https://thumbs.dreamstime.com/b/athletic-young-woman-running-white-side-view-athletic-young-woman-running-white-background-side-view-165559529.jpg'
+                }}
+                style={styles.recommendation_icon}
+              />
+              <Text style={styles.recommendation_text}>We recommend two miles of brisk exercise for you today</Text>
+            </View>
+            <View style={styles.recommendation_tiles}>
+              <Image
+                source={{
+                  uri: 'https://thumbs.dreamstime.com/b/athletic-young-woman-running-white-side-view-athletic-young-woman-running-white-background-side-view-165559529.jpg'
+                }}
+                style={styles.recommendation_icon}
+              />
+              <Text style={styles.recommendation_text}>We recommend two miles of brisk exercise for you today</Text>
+            </View>
+            <View style={styles.recommendation_tiles}>
+              <Image
+                source={{
+                  uri: 'https://thumbs.dreamstime.com/b/athletic-young-woman-running-white-side-view-athletic-young-woman-running-white-background-side-view-165559529.jpg'
+                }}
+                style={styles.recommendation_icon}
+              />
+              <Text style={styles.recommendation_text}>We recommend two miles of brisk exercise for you today</Text>
+            </View>
+            <View style={styles.recommendation_tiles}>
+              <Image
+                source={{
+                  uri: 'https://thumbs.dreamstime.com/b/athletic-young-woman-running-white-side-view-athletic-young-woman-running-white-background-side-view-165559529.jpg'
+                }}
+                style={styles.recommendation_icon}
+              />
+              <Text style={styles.recommendation_text}>We recommend two miles of brisk exercise for you today</Text>
+            </View>
+            <View style={styles.recommendation_tiles}>
+              <Image
+                source={{
+                  uri: 'https://thumbs.dreamstime.com/b/athletic-young-woman-running-white-side-view-athletic-young-woman-running-white-background-side-view-165559529.jpg'
+                }}
+                style={styles.recommendation_icon}
+              />
+              <Text style={styles.recommendation_text}>We recommend two miles of brisk exercise for you today</Text>
+            </View>
+            <View style={styles.recommendation_tiles}>
+              <Image
+                source={{
+                  uri: 'https://thumbs.dreamstime.com/b/athletic-young-woman-running-white-side-view-athletic-young-woman-running-white-background-side-view-165559529.jpg'
+                }}
+                style={styles.recommendation_icon}
+              />
+              <Text style={styles.recommendation_text}>We recommend two miles of brisk exercise for you today</Text>
+            </View>
+          </ScrollView>
+          <View style={styles.footer_menu}>
+            <Image source={LOGO_IMAGE} style={styles.logo_image}/>
           </View>
-          <View style={styles.recommendation_tiles}>
-            <Image
-              source={{
-                uri: 'https://thumbs.dreamstime.com/b/athletic-young-woman-running-white-side-view-athletic-young-woman-running-white-background-side-view-165559529.jpg'
-              }}
-              style={styles.recommendation_icon}
-            />
-            <Text style={styles.recommendation_text}>We recommend two miles of brisk exercise for you today</Text>
-          </View>
-          <StatusBar style="auto" />
+          {/*<StatusBar style="auto" />*/}
         </ImageBackground>
       </View>
   );
@@ -90,6 +203,11 @@ export default function App() {
 
 const styles = StyleSheet.create({
   container: {
+    flex: 1
+  },
+  content: {
+    // marginBottom: 200,
+    // marginTop: 200,
     flex: 1
   },
   image: {
@@ -108,8 +226,14 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     padding: 15
   },
+  footer_menu: {
+    flex: .15
+  },
+  header_menu: {
+    flex: .25
+  },
   logo_image: {
-    top: -50,
+    // top: 50,
     width: 150,
     height: 125
   },
@@ -134,6 +258,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     height: 100,
     justifyContent: 'center',
+    margin: 10,
   },
   suggestion:{
     color:'#fff',

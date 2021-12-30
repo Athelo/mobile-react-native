@@ -3,14 +3,7 @@ import HomeFeed from './components/HomeFeed'
 import Footer from './components/Footer'
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { Image, ImageBackground, ScrollView, StyleSheet, Text, View } from 'react-native';
-import LogoImage from './assets/Athelo-Logo-1D.jpg';
-const item= {
-  image: require("./assets/Athelo-Logo-1C.png"),
-  location: "Chennai",
-  status: 1,
-  projectId: 1
-}
+import { ImageBackground, StyleSheet, View } from 'react-native';
 // -----------------------------Apple Health Kit -----------------------------------------------------
 // import AppleHealthKit, {
 //   HealthValue,
@@ -82,11 +75,6 @@ const styles = StyleSheet.create({
   container: {
     flex: 1
   },
-  content: {
-    // marginBottom: 200,
-    // marginTop: 200,
-    flex: 1
-  },
   image: {
     display: 'flex',
     flex: 1,
@@ -94,67 +82,4 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: "space-around"
   },
-  entries: {
-    alignItems: 'center',
-    backgroundColor: 'rgba(0, 0, 0, 0.5)',
-    borderRadius: 20,
-    flexDirection: 'row',
-    flexWrap: 'wrap',
-    height: 100,
-    justifyContent: 'center',
-    padding: 15
-  },
-  footer_menu: {
-    flex: .15
-  },
-  header_menu: {
-    flex: .25
-  },
-  logo_image: {
-    // top: 50,
-    width: 150,
-    height: 125
-  },
-  recommendation_icon:{
-    borderRadius: 20,
-    flex: 1,
-  },
-  recommendation_text:{
-    alignItems: 'center',
-    flex: 2,
-    color:'gray',
-    flexWrap: 'wrap',
-    fontSize: 20,
-    fontWeight: 'bold',
-    justifyContent: 'center',
-    // TODO: Update this padding style with shorthand
-    padding: 10,
-    textAlignVertical: 'center',
-  },
-  recommendation_tiles:{
-    backgroundColor: '#fff',
-    borderRadius: 20,
-    display: 'flex',
-    flexDirection: 'row',
-    height: 100,
-    justifyContent: 'center',
-    margin: 10,
-  },
-  suggestion:{
-    color:'#fff',
-    fontSize: 20
-  },
-  text: {
-    textAlign: 'center',
-    color:'#fff',
-    fontWeight: 'bold',
-  },
-  welcome:{
-    alignItems: 'center',
-    color: '#fff',
-    fontSize: 25,
-    fontWeight: 'bold',
-    justifyContent: 'center',
-    textAlign: 'center'
-  }
 });

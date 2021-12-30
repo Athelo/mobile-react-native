@@ -1,13 +1,9 @@
+import Header from './components/Header'
+import HomeFeed from './components/HomeFeed'
+import Footer from './components/Footer'
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { Image, ImageBackground, ScrollView, StyleSheet, Text, View } from 'react-native';
-import LogoImage from './assets/Athelo-Logo-1D.jpg';
-const item= {
-  image: require("./assets/Athelo-Logo-1C.png"),
-  location: "Chennai",
-  status: 1,
-  projectId: 1
-}
+import { ImageBackground, StyleSheet, View } from 'react-native';
 // -----------------------------Apple Health Kit -----------------------------------------------------
 // import AppleHealthKit, {
 //   HealthValue,
@@ -66,23 +62,10 @@ export default function App() {
   return (
       <View style={styles.container}>
         <ImageBackground source={backgroundImage} resizeMode="cover" style={styles.image}>
-          <View >
-            <Image source={LOGO_IMAGE} style={styles.logo_image}/>
-          </View>
-          <View style={styles.entries}>
-            <Text style={styles.welcome}>Good morning, Monica!</Text>
-            <Text style={styles.suggestion}>It looks like you had a night of good sleep last night</Text>
-          </View>
-          <View style={styles.recommendation_tiles}>
-            <Image
-              source={{
-                uri: 'https://thumbs.dreamstime.com/b/athletic-young-woman-running-white-side-view-athletic-young-woman-running-white-background-side-view-165559529.jpg'
-              }}
-              style={styles.recommendation_icon}
-            />
-            <Text style={styles.recommendation_text}>We recommend two miles of brisk exercise for you today</Text>
-          </View>
-          <StatusBar style="auto" />
+          <Header/>
+          <HomeFeed/>
+          <Footer/>
+          {/*<StatusBar style="auto" />*/}
         </ImageBackground>
       </View>
   );
@@ -93,63 +76,10 @@ const styles = StyleSheet.create({
     flex: 1
   },
   image: {
+    display: 'flex',
     flex: 1,
     flexDirection: 'column',
     alignItems: 'center',
     justifyContent: "space-around"
   },
-  entries: {
-    alignItems: 'center',
-    backgroundColor: 'rgba(0, 0, 0, 0.5)',
-    borderRadius: 20,
-    flexDirection: 'row',
-    flexWrap: 'wrap',
-    height: 100,
-    justifyContent: 'center',
-    padding: 15
-  },
-  logo_image: {
-    top: -50,
-    width: 150,
-    height: 125
-  },
-  recommendation_icon:{
-    borderRadius: 20,
-    flex: 1,
-  },
-  recommendation_text:{
-    alignItems: 'center',
-    flex: 2,
-    color:'gray',
-    fontSize: 20,
-    fontWeight: 'bold',
-    justifyContent: 'center',
-    // TODO: Update this padding style with shorthand
-    padding: 20,
-  },
-  recommendation_tiles:{
-    backgroundColor: '#fff',
-    borderRadius: 20,
-    display: 'flex',
-    flexDirection: 'row',
-    height: 100,
-    justifyContent: 'center',
-  },
-  suggestion:{
-    color:'#fff',
-    fontSize: 20
-  },
-  text: {
-    textAlign: 'center',
-    color:'#fff',
-    fontWeight: 'bold',
-  },
-  welcome:{
-    alignItems: 'center',
-    color: '#fff',
-    fontSize: 25,
-    fontWeight: 'bold',
-    justifyContent: 'center',
-    textAlign: 'center'
-  }
 });

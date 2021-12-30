@@ -1,3 +1,6 @@
+import Header from './components/Header'
+import HomeFeed from './components/HomeFeed'
+import Footer from './components/Footer'
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { Image, ImageBackground, ScrollView, StyleSheet, Text, View } from 'react-native';
@@ -66,27 +69,9 @@ export default function App() {
   return (
       <View style={styles.container}>
         <ImageBackground source={backgroundImage} resizeMode="cover" style={styles.image}>
-          <View style={styles.header_menu}>
-            <Image source={LOGO_IMAGE} style={styles.logo_image}/>
-          </View>
-          <ScrollView style={styles.content}>
-            <View style={styles.entries}>
-              <Text style={styles.welcome}>Good morning, Monica!</Text>
-              <Text style={styles.suggestion}>It looks like you had a night of good sleep last night</Text>
-            </View>
-            <View style={styles.recommendation_tiles}>
-              <Image
-                source={{
-                  uri: 'https://thumbs.dreamstime.com/b/athletic-young-woman-running-white-side-view-athletic-young-woman-running-white-background-side-view-165559529.jpg'
-                }}
-                style={styles.recommendation_icon}
-              />
-              <Text style={styles.recommendation_text}>We recommend two miles of brisk exercise for you today</Text>
-            </View>
-          </ScrollView>
-          <View style={styles.footer_menu}>
-            <Image source={LOGO_IMAGE} style={styles.logo_image}/>
-          </View>
+          <Header/>
+          <HomeFeed/>
+          <Footer/>
           {/*<StatusBar style="auto" />*/}
         </ImageBackground>
       </View>
@@ -103,6 +88,7 @@ const styles = StyleSheet.create({
     flex: 1
   },
   image: {
+    display: 'flex',
     flex: 1,
     flexDirection: 'column',
     alignItems: 'center',
@@ -137,11 +123,13 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     flex: 2,
     color:'gray',
+    flexWrap: 'wrap',
     fontSize: 20,
     fontWeight: 'bold',
     justifyContent: 'center',
     // TODO: Update this padding style with shorthand
-    padding: 20,
+    padding: 10,
+    textAlignVertical: 'center',
   },
   recommendation_tiles:{
     backgroundColor: '#fff',

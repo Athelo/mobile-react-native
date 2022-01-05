@@ -5,7 +5,7 @@ function HomeFeed() {
   return (
     <ScrollView style={styles.content}>
       <View style={styles.entries}>
-        <Text style={styles.welcome}>Good morning, Monica!</Text>
+        <Text style={styles.welcome}>Good morning, Citizen!</Text>
         <Text style={styles.suggestion}>It looks like you had a night of good sleep last night</Text>
       </View>
       <View style={styles.recommendation_tiles}>

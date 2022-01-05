@@ -1,9 +1,34 @@
-import {Text} from "react-native";
+import {Pressable, Text, View} from "react-native";
 import React from "react";
 
-function NewsFeed() {
+function NewsFeed({ navigation }) {
   return(
-    <Text>This is the news feed page</Text>
+   <View>
+     <Pressable onPress={() => navigation.goBack()}>
+       <Text>This is the news feed page</Text>
+     </Pressable>
+     <Pressable onPress={() => navigation.goBack()}>
+       <Text>This is the news feed page</Text>
+     </Pressable>
+     <Pressable onPress={() => navigation.goBack()}>
+       <Text>This is the news feed page</Text>
+     </Pressable>
+     <Pressable onPress={() => navigation.goBack()}>
+       <Text>This is the news feed page</Text>
+     </Pressable>
+     <Pressable onPress={() => navigation.goBack()}>
+       <Text>This is the news feed page</Text>
+     </Pressable>
+     <Pressable onPress={() => navigation.goBack()}>
+       <Text>This is the news feed page</Text>
+     </Pressable>
+     <Pressable onPress={() => navigation.goBack()}>
+       <Text>This is the news feed page</Text>
+     </Pressable>
+     <Pressable onPress={() => navigation.goBack()}>
+       <Text>This is the news feed page</Text>
+     </Pressable>
+   </View>
   )
 }
 

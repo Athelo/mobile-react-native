@@ -1,12 +1,16 @@
-import {Image, ScrollView, StyleSheet, Text, View} from "react-native";
+import {Image, Pressable, ScrollView, StyleSheet, Text, View} from "react-native";
 import React from "react";
 
-function HomeFeed() {
+function HomeFeed({ navigation }) {
   return (
     <ScrollView style={styles.content}>
       <View style={styles.entries}>
-        <Text style={styles.welcome}>Good morning, Monica!</Text>
-        <Text style={styles.suggestion}>It looks like you had a night of good sleep last night</Text>
+        <Pressable onPress={() => navigation.navigate('News')}>
+          <Text style={styles.welcome}>Good morning, Citizen!</Text>
+        </Pressable>
+        <Pressable>
+          <Text style={styles.suggestion}>It looks like you had a night of good sleep last night</Text>
+        </Pressable>
       </View>
       <View style={styles.recommendation_tiles}>
         <Image

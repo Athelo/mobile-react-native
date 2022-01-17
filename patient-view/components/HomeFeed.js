@@ -1,4 +1,4 @@
-import {Image, Pressable, ScrollView, StyleSheet, Text, View} from "react-native";
+import { Image, Pressable, ScrollView, StyleSheet, Text, View } from "react-native";
 import React from "react";
 
 function HomeFeed({ navigation }) {

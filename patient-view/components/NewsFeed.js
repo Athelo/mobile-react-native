@@ -5,28 +5,28 @@ function NewsFeed({ navigation }) {
   return(
    <View>
      <Pressable onPress={() => navigation.goBack()}>
-       <Text>This is the news feed page</Text>
+       <Text>Latest Content Library</Text>
      </Pressable>
      <Pressable onPress={() => navigation.goBack()}>
-       <Text>This is the news feed page</Text>
+       <Text>type something else</Text>
      </Pressable>
      <Pressable onPress={() => navigation.goBack()}>
-       <Text>This is the news feed page</Text>
+       <Text>type something else</Text>
      </Pressable>
      <Pressable onPress={() => navigation.goBack()}>
-       <Text>This is the news feed page</Text>
+       <Text>type something else</Text>
      </Pressable>
      <Pressable onPress={() => navigation.goBack()}>
-       <Text>This is the news feed page</Text>
+       <Text>type something else</Text>
      </Pressable>
      <Pressable onPress={() => navigation.goBack()}>
-       <Text>This is the news feed page</Text>
+       <Text>type something else</Text>
      </Pressable>
      <Pressable onPress={() => navigation.goBack()}>
-       <Text>This is the news feed page</Text>
+       <Text>type something else</Text>
      </Pressable>
      <Pressable onPress={() => navigation.goBack()}>
-       <Text>This is the news feed page</Text>
+       <Text>type something else</Text>
      </Pressable>
    </View>
   )

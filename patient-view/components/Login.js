@@ -33,7 +33,7 @@ const styles = StyleSheet.create({
   input: {
     backgroundColor: 'white',
     borderRadius: 10,
-    fontSize: 24,
+    fontSize: 27,
     height: 40,
     margin: 10,
     textAlign: 'center',
@@ -45,29 +45,29 @@ const styles = StyleSheet.create({
     width: 350
   },
   signup: {
-    backgroundColor: '#41d800',
+    backgroundColor: '#988098',
     borderRadius: 10,
-    height: 40,
+    height: 70,
     margin: 30,
-    width: '60%'
+    width: '70%'
   },
   signup_text: {
     color: 'white',
-    fontSize: 30,
-    padding: 5,
+    fontSize: 25,
+    padding: 14,
     textAlign: 'center',
   },
   submit: {
-    backgroundColor: '#41d800',
+    backgroundColor: '#456212',
     borderRadius: 10,
-    height: 40,
+    height: 70,
     margin: 30,
-    width: '60%'
+    width: '70%'
   },
   submit_text: {
     color: 'white',
     fontSize: 30,
-    padding: 5,
+    padding: 12,
     textAlign: 'center',
   }
 });

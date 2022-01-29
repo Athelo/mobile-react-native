@@ -5,7 +5,7 @@ function HomeFeed({ navigation }) {
   return (
     <ScrollView style={styles.content}>
       <View style={styles.entries}>
-        <Pressable onPress={() => navigation.navigate('News')}>
+        <Pressable>
           <Text style={styles.welcome}>Good morning, Athena!</Text>
         </Pressable>
         <Pressable>

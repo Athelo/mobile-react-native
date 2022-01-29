@@ -12,7 +12,7 @@ export default function App({ navigation }) {
         <ImageBackground source={backgroundImage} resizeMode="cover" style={styles.image}>
           <Header/>
           <HomeFeed navigation={navigation}/>
-          <Footer/>
+          <Footer navigation={navigation}/>
         </ImageBackground>
       </View>
   );

@@ -1,13 +1,11 @@
 import Feather from "react-native-vector-icons/Feather";
-import {Image, StyleSheet, View} from "react-native";
-import LOGO_IMAGE from "../assets/Athelo-Logo-1D.png";
+import {Pressable, StyleSheet, View} from "react-native";
 import MaterialIcons from "react-native-vector-icons/MaterialIcons";
 import React from "react";
-import Entypo from "react-native-vector-icons/Entypo";
 
 const ICON_SIZE = 35;
 
-function Footer() {
+function Footer({ navigation }) {
   return (
     <View style={styles.footer_container}>
       <View style={styles.footer_menu}>
@@ -15,7 +13,9 @@ function Footer() {
         <Feather name="activity" size={ICON_SIZE} style={styles.footer_icon}/>
         <Feather name="moon" size={ICON_SIZE} style={styles.footer_icon}/>
         <MaterialIcons name="people-outline" size={ICON_SIZE}  style={styles.footer_icon}/>
-        <Feather name="book-open" size={ICON_SIZE}  style={styles.footer_icon}/>
+        <Pressable onPress={() => navigation.navigate('News')}>
+          <Feather name="book-open" size={ICON_SIZE}  style={styles.footer_icon}/>
+        </Pressable>
       </View>
     </View>
   )

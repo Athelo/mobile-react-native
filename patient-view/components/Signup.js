@@ -5,17 +5,14 @@ import React from 'react';
 const NamePlaceholder = 'Email'
 const PassPlaceholder = 'Password'
 
-function Login({ navigation }) {
+function Signup({ navigation }) {
   return (
     <View style={styles.container}>
       <Image source={LOGO_IMAGE} style={styles.logo_image}/>
       <TextInput placeholder={NamePlaceholder} style={styles.input}/>
       <TextInput placeholder={PassPlaceholder} style={styles.input}/>
       <TouchableOpacity onPress={() => navigation.navigate('Home')} style={styles.submit}>
-        <Text style={styles.submit_text}>Submit</Text>
-      </TouchableOpacity>
-      <TouchableOpacity onPress={() => navigation.navigate('Signup')} style={styles.signup}>
-        <Text style={styles.signup_text}>Create an Account</Text>
+        <Text style={styles.submitText}>Submit</Text>
       </TouchableOpacity>
     </View>
   );
@@ -44,19 +41,6 @@ const styles = StyleSheet.create({
     height: 350,
     width: 350
   },
-  signup: {
-    backgroundColor: '#41d800',
-    borderRadius: 10,
-    height: 40,
-    margin: 30,
-    width: '60%'
-  },
-  signup_text: {
-    color: 'white',
-    fontSize: 30,
-    padding: 5,
-    textAlign: 'center',
-  },
   submit: {
     backgroundColor: '#41d800',
     borderRadius: 10,
@@ -64,7 +48,7 @@ const styles = StyleSheet.create({
     margin: 30,
     width: '60%'
   },
-  submit_text: {
+  submitText: {
     color: 'white',
     fontSize: 30,
     padding: 5,
@@ -72,4 +56,4 @@ const styles = StyleSheet.create({
   }
 });
 
-export default Login;
+export default Signup;
